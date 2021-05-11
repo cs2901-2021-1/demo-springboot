@@ -1,7 +1,7 @@
 # Demo Springboot :leaves:
 
 
-### Database Connection
+### Database Connection :floppy_disk:
 `Path:` src/main/resources/application.properties
 ```
 spring.datasource.url = jdbc:postgresql://<HOST_IP>:<PORT>/<DATABASE_NAME>?currentSchema=<SCHEMA_NAME>
