@@ -17,7 +17,7 @@ public class User {
     @Column(name = "name", length = DB_CHAR_LENGTH)
     private String name;
 
-    @Column(name = "dni", updatable = false, length = DB_DNI_LENGTH)
+    @Column(name = "dni", updatable = false, length = DB_DNI_LENGTH, unique = true)
     private String dni;
 
     public User(){

@@ -18,7 +18,7 @@ public class UserService {
     private UserRepository userRepository;
 
     public User save(UserDTO userDTO){
-        User user = new User();
+        var user = new User();
         user.setDni(userDTO.getDni());
         user.setName(userDTO.getName());
         return userRepository.save(user);
