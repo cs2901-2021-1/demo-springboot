@@ -4,6 +4,7 @@
 ### Prueba la API :hammer:
 
 > Guardar un nuevo usuario.
+
 `URI:` localhost:8080/users
 `BODY:`
 ```
@@ -14,6 +15,7 @@
 ```
 
 > Obtener un usuario por {id}.
+
 `URI:` localhost:8080/users/{id}
 
 
