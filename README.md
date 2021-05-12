@@ -5,6 +5,8 @@
 
 > Guardar un nuevo usuario.
 
+`Method:` POST
+
 `URI:` localhost:8080/users
 
 `BODY:`
@@ -16,6 +18,8 @@
 ```
 
 > Obtener un usuario por {id}.
+
+`Method:` GET
 
 `URI:` localhost:8080/users/{id}
 
