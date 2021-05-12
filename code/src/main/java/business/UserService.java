@@ -1,6 +1,7 @@
 package business;
 
 import business.custom_exceptions.CustomNotFoundException;
+import business.custom_exceptions.TooLongException;
 import data.dtos.UserDTO;
 import data.entities.User;
 import data.repositories.UserRepository;
@@ -19,6 +20,7 @@ public class UserService {
 
     public User save(UserDTO userDTO){
         var user = new User();
+        if(userDTO.getDni().length() > 8) throw new TooLongException("El dni no puede tener más de 8 caracteres!");
         user.setDni(userDTO.getDni());
         user.setName(userDTO.getName());
         return userRepository.save(user);
